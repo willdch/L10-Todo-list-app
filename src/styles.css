@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background-color: cornflowerblue;
+    border: 10px double black;
+    height: 100vh;
+}
+
+#headertitle {
+
+    color:darkblue;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.header {
+    background-color: grey;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;} 
+
+
+
+
+
