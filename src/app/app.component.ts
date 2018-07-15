@@ -7,13 +7,13 @@ import { Todo } from './todo';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [TodoDataService],
+  providers: [],
 })
 export class AppComponent {
   title = 'L10-todo-app';
 
  
-
+newTodo: Todo = new Todo();
 
   constructor(private todoDataService: TodoDataService) {
   }
@@ -22,10 +22,11 @@ export class AppComponent {
     this.todoDataService.addTodo(todo);
   }
 
-  toggleTodoComplete(todo: Todo) {
+  ontoggleTodoComplete(todo: Todo) {
     this.todoDataService.toggleTodoComplete(todo);
   }
 
+  on
   removeTodo(todo: Todo) {
     this.todoDataService.deleteTodoById(todo.id);
   }

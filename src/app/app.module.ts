@@ -5,6 +5,9 @@ import { FormsModule } from '../../node_modules/@angular/forms';
 import { TodoListHeaderComponent } from './components/todo-list-header/todo-list-header.component';
 import { HttpModule } from '@angular/http';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TodoListItemComponent } from './components/todo-list-item/todo-list-item.component';
+import { TodoListFooterComponent } from './components/todo-list-footer/todo-list-footer.component';
+import { TodoDataService } from './services/todo-data.service';
 
 
 
@@ -12,7 +15,10 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
   declarations: [
     AppComponent,
     TodoListHeaderComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoListItemComponent,
+    TodoListFooterComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -20,7 +26,7 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     HttpModule
     
   ],
-  providers: [],
+  providers: [TodoDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
