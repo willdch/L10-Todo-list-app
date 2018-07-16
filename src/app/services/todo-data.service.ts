@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Todo } from '../todo';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class TodoDataService {
 
    // Placeholder for last id so we can simulate
